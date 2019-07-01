@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">eReceipts</string>
+    <string name="title_bills">Bills</string>
+    <string name="title_todo">To Do</string>
+    <string name="receiptNumber">Receipt#</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="saveBill">Save</string>
+    <string name="cancelBill">Cancel</string>
+    <string name="receipt">Receipt</string>
+    <string name="date">Date</string>
+    <string name="place">Place</string>
+    <string name="amount">Amount</string>
+    <string name="savings">Savings</string>
+</resources>

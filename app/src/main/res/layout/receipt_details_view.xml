@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/receiptNumberTextView"
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@+id/receiptDetailsAction"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="-59dp"
+            android:text="@string/receiptNumber" />
+
+        <TextView
+            android:id="@+id/receiptNUmberTextField"
+            android:layout_width="213dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@id/receiptNumberTextView"
+            android:layout_alignRight="@id/receiptNumberTextView"
+            android:layout_alignBottom="@+id/receiptDetailsAction"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="-249dp"
+            android:layout_marginRight="-249dp"
+            android:layout_marginBottom="-56dp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/receiptNumberTextView"
+            android:layout_marginBottom="-53dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/dateTextField"
+            android:layout_width="213dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@id/receiptNumberTextView"
+            android:layout_alignRight="@id/receiptNumberTextView"
+            android:layout_alignBottom="@+id/receiptNUmberTextField"
+            android:layout_marginEnd="-249dp"
+            android:layout_marginRight="-249dp"
+            android:layout_marginBottom="-61dp" />
+
+        <TextView
+            android:id="@+id/placeTextView"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/dateTextView"
+            android:layout_marginBottom="-63dp"
+            android:text="@string/place" />
+
+        <TextView
+            android:id="@+id/placeTextField"
+            android:layout_width="213dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@id/receiptNumberTextView"
+            android:layout_alignRight="@id/receiptNumberTextView"
+            android:layout_alignBottom="@+id/dateTextField"
+            android:layout_marginEnd="-250dp"
+            android:layout_marginRight="-250dp"
+            android:layout_marginBottom="-65dp" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/placeTextView"
+            android:layout_marginBottom="-63dp"
+            android:text="@string/amount" />
+
+        <TextView
+            android:id="@+id/amountTextField"
+            android:layout_width="213dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@id/receiptNumberTextView"
+            android:layout_alignRight="@id/receiptNumberTextView"
+            android:layout_alignBottom="@+id/placeTextField"
+            android:layout_marginEnd="-250dp"
+            android:layout_marginRight="-250dp"
+            android:layout_marginBottom="-65dp" />
+
+        <TextView
+            android:id="@+id/savingsTextView"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/amountTextView"
+            android:layout_marginBottom="-63dp"
+            android:text="@string/savings" />
+
+        <TextView
+            android:id="@+id/savingsTextField"
+            android:layout_width="213dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@id/receiptNumberTextView"
+            android:layout_alignRight="@id/receiptNumberTextView"
+            android:layout_alignBottom="@+id/amountTextField"
+            android:layout_marginEnd="-250dp"
+            android:layout_marginRight="-250dp"
+            android:layout_marginBottom="-65dp" />
+
+        <TextView
+            android:id="@+id/receiptTextView"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/amountTextView"
+            android:layout_marginBottom="-113dp"
+            android:text="@string/receipt" />
+
+    <ImageView
+        android:id="@+id/receiptImageView"
+        android:layout_width="214dp"
+        android:layout_height="223dp"
+        android:layout_alignEnd="@+id/receiptTextView"
+        android:layout_alignRight="@+id/receiptTextView"
+        android:layout_alignBottom="@+id/savingsTextField"
+        android:layout_marginEnd="-248dp"
+        android:layout_marginRight="-248dp"
+        android:layout_marginBottom="-236dp"
+        android:contentDescription="@string/receipt" />
+</RelativeLayout>

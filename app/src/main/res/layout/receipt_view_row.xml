@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receiptRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/receiptNumberText"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="30dp"
+        android:text="Receipt #"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <TextView
+        android:id="@+id/receiptNumber"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/receiptNumberText"
+        android:paddingLeft="30dp"
+        android:text="23451313"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <TextView
+        android:id="@+id/Place"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/receiptNumberText"
+        android:layout_marginTop="38dp"
+        android:paddingLeft="30dp"
+        android:text="Costco"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <TextView
+        android:id="@+id/PlaceText"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-165dp"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/receiptNumberText"
+        android:paddingLeft="30dp"
+        android:text="Costco"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="71dp"
+        android:paddingLeft="30dp"
+        android:text="12 May 2019"
+        android:layout_toRightOf="@+id/receiptNumberText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-165dp"
+        android:layout_marginTop="71dp"
+        android:layout_toRightOf="@+id/receiptNumberText"
+        android:paddingLeft="30dp"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlack" />
+
+    <ImageView
+        android:id="@+id/detailsDisclosour"
+        android:layout_width="47dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/date"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_chevron_right_black_48dp" />
+
+</RelativeLayout>
