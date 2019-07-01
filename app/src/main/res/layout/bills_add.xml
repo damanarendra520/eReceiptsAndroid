@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/actionBar"
+            style="@style/HeaderBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/toolbarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Add Receipt"
+                android:textAppearance="@android:style/TextAppearance.WindowTitle"
+                android:textSize="24sp"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+            <ImageView
+                android:id="@+id/save_bill"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/baseline_check_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/cancel_add_bill"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:src="@drawable/baseline_close_white_48dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/receiptNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actionBar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="176dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:textColor="@color/darkBlack"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editAmount"
+            android:layout_alignLeft="@+id/editAmount"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="42dp"
+            android:autofillHints=""
+            android:textColor="@color/darkBlack"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="145dp"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@+id/receiptNumberTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/receiptNumber"
+            android:textColor="@color/darkBlack"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="154dp"
+            android:layout_height="38dp"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editPlace"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/place"
+            android:textColor="@color/darkBlack"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="151dp"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editDate"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="-1dp"
+            android:textColor="@color/darkBlack"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="154dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/editPlace"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_marginTop="41dp"
+            android:text="@string/amount"
+            android:textColor="@color/darkBlack"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editSavings"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPlace"
+            android:layout_alignRight="@+id/receiptNumberTextView"
+            android:layout_marginTop="39dp"
+            android:autofillHints=""
+            android:textColor="@color/darkBlack"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editSavings"
+            android:layout_alignBottom="@+id/editSavings"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toStartOf="@+id/editPlace"
+            android:textColor="@color/darkBlack"
+            android:layout_toLeftOf="@+id/editPlace"
+            android:text="@string/savings"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDate"
+            android:layout_alignLeft="@+id/receiptNumberTextView"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:textColor="@color/darkBlack"
+            android:ems="10"
+            android:inputType="text"></EditText>
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiptNumberTextView"
+            android:layout_alignLeft="@+id/editAmount"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:textColor="@color/darkBlack"
+            android:ems="10"/>
+
+    </RelativeLayout>
+</ScrollView>

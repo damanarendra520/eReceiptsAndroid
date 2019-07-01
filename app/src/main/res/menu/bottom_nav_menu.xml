@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_bills"
+        android:icon="@drawable/billstabimage"
+        android:title="@string/title_bills" />
+
+    <item
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/todolist"
+        android:title="@string/title_todo" />
+
+</menu>
